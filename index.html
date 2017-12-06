@@ -1,46 +1,69 @@
 <html>
 /**
-* html 문서의 시작과 끝은 <html> </html>이다. html 문서는 head와 body로 구성된다.
+*  html 문서의 시작과 끝은 <html> </html>이다. html 문서는 head와 body로 구성된다.
 /*
 
 <head>
-<title>TGKwon - Welcome </title>
-<meta charset="utf-8">
-</head>
 /**
 *  head는 웹페이지의 타이틀(title)과 사용할 언어(한글은 utf-8을 사용)를 표시한다.
 /*
 
+<title>TGKwon - Welcome </title>
+<meta charset="utf-8">
+</head>
 
 <body>
+/**
+*  body는 웹페이지의 내용을 TAG를 이용하여 표시한다.
+*  모든 TAG는 열리는 태그(< >)와 닫히는 태그(</>)로 구성된다.
+*  일부 TAG는 닫히는 태그없이 사용하기도 한다.
+*  <br> : 줄바꿈
+*  <img> : 그림 삽입
+*  <meta> : 사용할 언어 선택
+/*
+
   <h1> <a href="index.html"> TG Kwon's Home </a></h1>
   <h2><a href="index.html"> (권태근의 홈페이지) </a></h2>
   /**
   * h1은 큰 제목을 표시할 때 사용하며, 가장 작은 제목은 h6을 사용한다.
   * a는 링크(anchol)할 참조 웹페이지(hypertext reference)를 표기한다.
+  * 새 탭으로 웹페이지를 열 때는 target="_blank"를 입력한다.
   /*
 
 <ol>
+/**
+* ol은 일련번호 순서대로 리스트(list)를 사용할 때 사용하며, 리스트는 li로 표기한다.
+*
+/*
   <li> <a href="개인홈피.html" target="_blank" title="자작 수제 홈피">Homepage </a> </li>
   <li> <a href="2.html" title="나의 발자취"> History </a> </li>
   <li> <a href="3.html" title="사랑스런 가족들"> Family </a> </li>
   <li> <a href="4.html" title="취미생활들"> Favorates </a> </li>
   <li> <a href="5.html" title="자잘한 이야기"> Etc </a> </li>
 </ol>
-/**
-* ol은 일련번호대로 리스트(list)를 사용할 때 사용하며, 리스트는 li로 표기한다.
 
-/*
 
 <h2> Home </h2>
 <img src="TS3HFamily.jpg" width="30%"><br><br><br>
+/**
+* <img>는 소스 파일의 이름과 너비를 설정하여 배치할 수 있다.
+*
+/*
 
 <p>
-  <strong> Welcome to TGKwon's Home </strong>
+  <strong> Welcome to <u>TGKwon's Home </u></strong>
+  /**
+  * <strong>은 강조를 <u>는 밑줄을 나타낸다.
+  *
+  /*
 </p>
 
 <p>
   <iframe width="640" height="360" src="https://www.youtube.com/embed/ilcWwJhewCY" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+  /**
+  * <iframe>은 삽입할 동영상을 넣는 TAG로 동영상에서 소스코드를 복사하여 붙여넣으면 된다.
+  *
+  /*
 </p>
 
 
@@ -48,7 +71,7 @@
 <div id="disqus_thread"></div>
 <script>
 /**
-*  댓글 서비스 from DISQUS
+*  댓글 서비스 from DISQUS(회원가입하고, 로그인하여 사용함)
 *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
 *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
 /*
@@ -66,8 +89,6 @@ s.setAttribute('data-timestamp', +new Date());
 </script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 </p>
-
-
 
 
 </body>
